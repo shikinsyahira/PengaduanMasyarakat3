@@ -3,9 +3,9 @@ package com.example.pengaduanmasyarakat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Dashboard : AppCompatActivity() {
+class profil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.activity_profil)
     }
 }
