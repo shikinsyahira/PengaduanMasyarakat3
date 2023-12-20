@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profil">
+    tools:context=".profil"
+    android:background="@color/primaryColor">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:textSize="30dp"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="140dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/profil"/>
+
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:width="270dp"
+        android:height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="400dp"
+        android:src="@drawable/rectangle1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="220dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

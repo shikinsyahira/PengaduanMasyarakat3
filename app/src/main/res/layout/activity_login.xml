@@ -4,6 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".MainActivity"
+    android:background="@color/Color">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/nik"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/r1"
+            android:hint="NIK"
+            android:paddingLeft="30dp"
+            android:paddingTop="1dp"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/r1"
+            android:hint="Password"
+            android:paddingLeft="20dp"
+            android:paddingTop="1dp"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:width="270dp"
+        android:height="40dp"
+        android:background="@drawable/r1"
+        android:paddingTop="1dp"
+        android:text="LOGIN"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        tools:ignore="TextSizeCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuatPengaduan">
+    tools:context=".buatpengaduan"
+    android:background="@color/primaryColor">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:width="270dp"
+        android:height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/kembali" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Pengaduan"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="sans-serif-black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="550dp"
+        android:src="@drawable/rectangle1"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : "
+        android:textSize="20dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="200dp"
+        android:autoSizeMinTextSize="30dp"
+        android:background="@drawable/r1"
+        android:backgroundTint="@color/primaryColor"
+        android:hint="@string/app_name"
+        android:paddingLeft="30dp"
+        android:paddingTop="1dp"
+        android:textSize="15sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi : "
+        android:textSize="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="280dp"
+        android:autoSizeMinTextSize="30dp"
+        android:background="@drawable/r1"
+        android:backgroundTint="@color/primaryColor"
+        android:hint="@string/app_name"
+        android:paddingLeft="30dp"
+        android:paddingTop="1dp"
+        android:textSize="15dp"
+        tools:ignore="DuplicateIds,TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Pengaduan : "
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="380dp"
+        android:autoSizeMinTextSize="30dp"
+        android:background="@drawable/rectangle2"
+        android:backgroundTint="@color/primaryColor"
+        android:hint="@string/app_name"
+        android:paddingLeft="30dp"
+        android:paddingTop="1dp"
+        android:textSize="15dp"
+        tools:ignore="DuplicateIds,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnkirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="640dp"
+        android:width="270dp"
+        android:height="40dp"
+        android:background="@drawable/r5"
+        android:paddingTop="9dp"
+        android:text="Kirim"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
