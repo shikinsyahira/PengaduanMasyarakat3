@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
         btnregister = findViewById(R.id.btnregister)
         btnregister.setOnClickListener{
-            startActivity(Intent(this, register::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
         }
 
         val nikEditText: EditText = findViewById(R.id.nik)
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             val password = password.text.toString()
             saveUsername(nikEditText)
             val BASE_URL = "https://shikinsyahira.000webhostapp.com/api-login.php"
-            val url = "$BASE_URL?username=$nikEditText&password=$password"
+            val url = "$BASE_URL?NIK=$nikEditText&Password=$password"
 
             if (!(nikEditText.isEmpty() || password.isEmpty())) {
 
